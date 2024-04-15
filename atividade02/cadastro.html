@@ -1,0 +1,141 @@
+<!-- Ítalo Cezar Eugênio de Santana
+UC22102126
+-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Dados</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            max-width: 600px;
+            width: 100%;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border: 2px solid #0000FF;
+        }
+
+        .bullet-select {
+            list-style: none;
+            padding: 0;
+        }
+
+        .bullet-select li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .checkbox-group {
+            display: inline-block;
+        }
+
+        .checkbox-group label {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            max-width: 400px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome"><br>
+            <label for="endereco">Endereço:</label><br>
+            <input type="text" id="endereco" name="endereco"><br>
+            <label for="cidade">Cidade:</label><br>
+            <input type="text" id="cidade" name="cidade"><br>
+            <label for="estado">Estado:</label><br>
+            <select id="estado" name="estado">
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+            </select><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados Profissionais</legend>
+            <label for="cargo">Natureza do Cargo:</label><br>
+            <ul class="bullet-select">
+                <li><input type="radio" id="gerencia" name="cargo" value="gerencia"><label
+                        for="gerencia">Gerência</label></li>
+                <li><input type="radio" id="financeiro" name="cargo" value="financeiro"><label
+                        for="financeiro">Financeiro</label></li>
+                <li><input type="radio" id="recepcao" name="cargo" value="recepcao"><label
+                        for="recepcao">Recepção</label></li>
+                <li><input type="radio" id="administrativo" name="cargo" value="administrativo"><label
+                        for="administrativo">Administrativo</label></li>
+                <li><input type="radio" id="juridica" name="cargo" value="juridica"><label
+                        for="juridica">Jurídica</label></li>
+            </ul>
+            <br><br>
+
+            <div class="checkbox-group">
+                <label for="areas_interesse">Áreas de Interesse:</label><br>
+                <input type="checkbox" id="computacao" name="interesse" value="computacao">
+                <label for="computacao">Computação</label>
+                <input type="checkbox" id="biologia" name="interesse" value="biologia">
+                <label for="biologia">Biologia</label>
+                <input type="checkbox" id="meio_ambiente" name="interesse" value="meio_ambiente">
+                <label for="meio_ambiente">Meio Ambiente</label>
+                <input type="checkbox" id="engenharia" name="interesse" value="engenharia">
+                <label for="engenharia">Engenharia</label>
+                <input type="checkbox" id="historia" name="interesse" value="historia">
+                <label for="historia">História</label><br><br>
+            </div>
+        </fieldset>
+
+        <label for="feedback">Mini-currículo:</label><br>
+        <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+
+</body>
+
+</html>
