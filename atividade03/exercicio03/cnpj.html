@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validador de CNPJ</title>
+    <link rel="stylesheet" href="cnpj.css">
+</head>
+<body>
+    <h1>Validador de CNPJ</h1>
+
+    <form id="formCNPJ">
+        <label for="cnpjInput">Digite seu CNPJ:</label>
+        <input type="text" id="cnpjInput" placeholder="00.000.000/0000-00">
+        <button type="button" onclick="validarCNPJ()">Validar</button>
+    </form>
+
+    <div id="resultado"></div>
+
+    <script src="cnpj.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+}
+
+#formCPF {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#cpfInput {
+    width: 200px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#resultado {
+    font-weight: bold;
+    text-align: center; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    font-size: 40px; 
+}
+
